@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>enock – Personal Portfolio</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1 class="logo">enock</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>enock – Educator & Graphic Designer</h2>
+      <p>Empowering students and clients through education and creative solutions.</p>
+      <a href="#about" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Spline 3D Viewer -->
+  <div class="spline-container">
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.94/build/spline-viewer.js"></script>
+    <spline-viewer url="https://prod.spline.design/n78nMGz9GIeyaHeZ/scene.splinecode"></spline-viewer>
+  </div>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate educator and graphic designer dedicated to fostering creativity and critical thinking in my students. Currently, I teach at JRIIT, where I integrate design principles into the curriculum to enhance learning experiences.</p>
+    <p>My mission is to empower students and clients through education and creative solutions, bridging the gap between design and learning.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 enock. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Intersection Observer to reveal the About section with animation
+    const aboutSection = document.getElementById('about');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          aboutSection.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.5 });
+
+    observer.observe(aboutSection);
+  </script>
+</body>
+</html>
