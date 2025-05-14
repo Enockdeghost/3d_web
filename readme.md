@@ -17,7 +17,7 @@ In this project, you'll see how to integrate 3D models and animations created in
 
 - **Frontend**: HTML, CSS, JavaScript
 - **3D Graphics & Animation**: Spline
-- **Web Server**: Local or hosted via GitHub Pages or other web services
+
 
 ## Getting Started
 
